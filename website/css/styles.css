@@ -110,3 +110,30 @@ body{
 
 
 /* index page*/
+
+.info_wrapper{
+
+list-style-type: none;
+
+}
+
+.info_list{
+
+background-color: black;
+padding: 5px;
+height: 100px;
+width: 5px;
+display: inline-block;
+
+margin: 50px 0px 0px 25px;
+
+
+}
+
+.info_list:onclick{
+
+
+    background-color: white;
+
+
+}
