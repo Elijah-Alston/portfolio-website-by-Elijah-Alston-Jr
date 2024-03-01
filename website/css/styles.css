@@ -38,6 +38,7 @@ input,select{vertical-align:middle}
   
 float: left;
 border-right: 2px solid rgb(31, 58, 0);
+padding: 0 0 0 5px;
 
 }
 
@@ -106,6 +107,8 @@ body{
     background-color: #34403A;
 
     color: #138A36;
+   
+
 }
 
 
@@ -130,10 +133,50 @@ margin: 50px 0px 0px 25px;
 
 }
 
-.info_list:onclick{
+.info_list:hover{
 
 
     background-color: white;
 
 
 }
+
+.body-wrapper{
+
+display: grid;
+place-items: center;
+    
+}
+
+.grid-info{
+display: grid;
+
+
+grid-template-rows: 100px 100px 100px 100px;
+grid-template-columns: 100px 100px 100px 100px ;
+
+
+
+
+}
+
+
+.info-div1 ,.info-div2, .info-div3, .info-div4{
+
+
+background-color: white;
+
+
+border: 3px solid red;
+
+text-align: center;
+
+}
+
+
+.info-div1{
+
+ grid-row: 1 /  3;
+ grid-column: 1/ 5;
+}
+
