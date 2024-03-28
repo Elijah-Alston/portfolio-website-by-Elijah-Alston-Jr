@@ -106,14 +106,13 @@ transition: all .5s ease-in-out;
 
 body{
  
+  /*
  background-image: url("../images/maui.png");
  background-repeat: no-repeat;
  background-position: top;
  min-height: 100%;
- 
- 
- background-size:cover;
-
+  background-size:cover;
+*/
     background-color: #34403A;
 
     color: #138A36;
@@ -161,11 +160,13 @@ place-items: center;
 
 .grid-info{
 display: grid;
+margin-top: 200px;
 
 
-grid-template-rows: 2vw 2vw 2vw 2vw;
-grid-template-columns: 150px 150px 150px 150px ;
+grid-template-rows: 200px 200px  200px 200px  ;
+grid-template-columns: 100px 100px 100px 100px ;
 
+border: green 2px solid;
 
 
 
@@ -176,7 +177,7 @@ grid-template-columns: 150px 150px 150px 150px ;
 
 
 background-color: white;
-opacity: 95%;
+opacity: 50%;
 
 
 border: 3px solid red;
@@ -189,39 +190,31 @@ text-align: center;
 .info-div1{
  
 
- grid-row: 4/  4;
- grid-column: 1/ 5;
- transition-delay: 3s;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+
+ grid-column: 1/ 4;
+
  
  
-
-}
-
-.info-div1:hover{
-  grid-row: 4/  4;
-  grid-column: 1/ 5;
- 
-  
-padding: 200px;
-
-
 
 }
 
 .info-div2{
 
-  grid-row: 1/1;
-  grid-column: 1/5;
+  grid-row: 2/4;
+  grid-column: 2/4;
 }
 .info-div3{
-grid-row: 2/2;
+grid-row: 1/4;
 
-grid-column: 4/4;
+grid-column: 3/4;
 
 }
 
 .info-div4{
-grid-row: 2/2
+grid-row: 1/4;
+grid-column: 4/4;
 
 }
 
